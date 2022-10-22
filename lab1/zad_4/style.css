@@ -1,0 +1,37 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 90vw;
+    height: 30vh;
+    padding: 1em;
+}
+
+.red, .blue, .yellow {
+    border: 2px black solid;
+    margin: 1em;
+}
+
+.red {
+    background-color: red;
+    width: 30%;
+    height: 100%;
+}
+
+.blue {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.yellow {
+    background-color: yellow;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+}

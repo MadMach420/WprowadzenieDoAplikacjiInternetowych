@@ -1,0 +1,71 @@
+.container {
+    background-color: darkgray;
+    padding: 1em;
+    /* height: 90vh;
+    width: 90vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.grid-container, .grid-container > div {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    background-color: grey;
+    padding: 1em;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.top-text {
+    justify-content: center;
+}
+
+.logo {
+    background-color: white;
+    align-self: flex-start;
+    border: 2px solid black;
+    padding: 1em;
+    justify-self: left;
+}
+
+.content {
+    grid-column: span 3;
+}
+
+.navbar-1, .navbar-2, .navbar-3, .navbar-4 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.navbar-1, .navbar-3 {
+    font-weight: bold;
+}
+
+.left-col, .content {
+    text-align: center;
+    padding: 1em 1em 10em 1em;
+    background-color: white;
+}
+
+.stopka {
+    grid-column: span 4;
+    text-align: center;
+    background-color: grey;
+    padding: 1em;
+}

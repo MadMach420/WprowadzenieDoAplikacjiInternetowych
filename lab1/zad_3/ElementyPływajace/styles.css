@@ -1,0 +1,49 @@
+body {
+	font-family:'Times New Roman', Times, serif;
+	padding: 0;
+}
+
+.page {
+	margin: 0;
+	background-color:rgb(240, 240, 230);
+}
+
+h1 {
+	background-color: #104557;
+	color: white;
+	font-size: 2.4em;
+	padding: 0.5em 1em;
+	border-top: rgb(250, 239, 179) 3px solid;
+	border-bottom: rgb(250, 239, 179) 3px solid;
+}
+
+h2 {
+	font-size: 1.8em;
+	border-bottom:#2c4f5a3d 1px solid;
+}
+
+h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center;
+	word-wrap: normal;
+}
+
+p, ul, ol {
+	font-size: 1.2em;
+	line-height: 130%;
+}
+
+.side-element {
+	float: right;
+	background-color: rgb(252, 235, 142);
+	border: 1px solid gold;
+	border-top: 5px solid gold;
+	word-wrap: normal;
+	margin: 1em;
+	width: 20%;
+}
+
+.main {
+	border-bottom: rgba(128, 128, 128, 0.356) 1px solid;
+}
