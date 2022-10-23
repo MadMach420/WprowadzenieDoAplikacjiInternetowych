@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 0.5em;
+}
+
+.city-card {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px rgb(153, 153, 153);
+}
+
+.city-card > img {
+    border-radius: 2px;
+    width: 100%;
+}
+
+.city-card > h2, .city-card > h3, .city-card > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.city-card > h3 {
+    color: rgb(255, 94, 94);
+}
+
+.city-card > p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.city-card > hr {
+    margin: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.192);
+}
+
+.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+button {
+    background-color: rgb(241, 76, 76);
+    color: white;
+    border: 0;
+    font-size: large;
+}
+
+button:hover {
+    background-color: rgb(214, 70, 70);
+}
+
+ul {
+    justify-self: flex-end;
+}
+
+li {
+    color: rgba(0, 0, 0, 0.7);
+    list-style-type: "❤";
+}
+
+li:first-child {
+    list-style-type: "💬";
+}
+
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 33%);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}

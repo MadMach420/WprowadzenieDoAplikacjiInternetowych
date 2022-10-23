@@ -1,0 +1,29 @@
+.flex-container {
+    border: 2px blue solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 50vh;
+    width: 50vw;
+}
+
+.flex-container > * {
+    background-color: lightblue;
+    border: 1px solid rgb(102, 127, 136);
+    padding: 20px;
+}
+
+.box-1 {
+    align-self: stretch;
+}
+
+.box-3 {
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
