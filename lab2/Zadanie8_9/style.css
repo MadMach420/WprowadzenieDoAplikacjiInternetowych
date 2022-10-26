@@ -11,10 +11,19 @@ body {
 }
 
 .content {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
+    overflow: hidden;
+}
+    
+.background {
+    width: 100%;
+    height: 100vh;
     background-color: rgb(115, 115, 255);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 88%);
+    position: fixed;
+    scroll-behavior:unset;
 }
 
 h1 {
@@ -32,6 +41,7 @@ p {
     align-self: center;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin: 2rem;
 }
 
 .text {
@@ -40,7 +50,8 @@ p {
     padding-left: 2em;
     padding-right: 1em;
     color: white;
-    
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
 }
 
 .form {
@@ -52,6 +63,9 @@ p {
     border-radius: 10px;
     padding-left: 1em;
     padding-right: 2em;
+    box-shadow: 0px 0px 10px black;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
 }
 
 input {
@@ -83,6 +97,23 @@ input {
     }
 
     .text, .form {
-        padding: 3em;
+        transform: translateX(0%);
+        padding: 1rem;
+    }
+
+    .text {
+        transform: translateY(-100%);
+    }
+
+    .form {
+        transform: translateY(100%);
+        width: 100%;
+    }
+}
+
+
+@keyframes slide-in {
+    100% {
+        transform: translate(0%);
     }
 }
