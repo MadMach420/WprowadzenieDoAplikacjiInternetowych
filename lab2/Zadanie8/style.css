@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(115, 115, 255);
+}
+
+h1 {
+    padding-bottom: 2em;
+    font-size: larger;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.grid-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text {
+    align-self: center;
+    justify-self: center;
+    padding-left: 2em;
+    padding-right: 1em;
+    color: white;
+    
+}
+
+.form {
+    width: 50%;
+    padding: 4em;
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.238);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.submit, button {
+    background-color: rgb(115, 115, 255);
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.submit {
+    border: none;
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .text, .form {
+        padding: 3em;
+    }
+}
