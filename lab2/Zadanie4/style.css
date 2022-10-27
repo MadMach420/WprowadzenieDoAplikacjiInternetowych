@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+    font-size: large;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(./bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background-color {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: lightskyblue;
+    opacity: 50%;
+}
+
+.top {
+    position: relative;
+    display: grid;
+    background-color: rgb(95, 194, 255);
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    color: white;
+}
+
+.logo, .buttons {
+    padding: 1rem;
+    justify-self: center;
+}
+
+.main-navbar {
+    justify-self: center;
+    white-space: nowrap;
+}
+
+.main-navbar > li {
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 1rem;
+    background-color: white;
+    color: rgb(95, 194, 255);
+    width: 200%;
+}
+
+.dropdown-content > * {
+    padding: 1rem;
+}
+
+.dropdown-content > *:hover {
+    background-color: rgb(255, 246, 235);
+}
+
+.dropdown:hover .dropdown-content {
+    left: 0;
+    display: block;
+}
+
+.dropdown div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 1rem;
+    border-top: 6px solid white;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.dropdown-content::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 18%;
+    bottom: 100%;
+    border-bottom: 10px solid white;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.buttons {
+    padding: 0;
+    display: inline-flex;
+}
+
+button {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 0 0.2rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.log-in, .sign-up:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.log-in:hover, .sign-up {
+    background-color: white;
+    color: rgb(95, 194, 255);
+}
