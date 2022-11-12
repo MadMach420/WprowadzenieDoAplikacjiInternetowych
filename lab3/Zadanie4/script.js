@@ -12,6 +12,7 @@ function turnOnCounter () {
 function turnOffCounter () {
     incrementButton.removeEventListener("click", increment)
     showCounter.innerText = "Wyłączono licznik"
+    counter = 0
 }
 
 function increment() {

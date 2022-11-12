@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        #blue, #red, #yellow {
+            width: fit-content;
+            height: fit-content;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #red {
+            background-color: red;
+        }
+        #yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="stop-start">Stop/Start Propagation</button>
+    <button id="reset">Reset</button>
+    <button id="switch">Switch</button>
+    <div id="blue">
+        1
+        <div id="red">
+            2
+            <div id="yellow">
+                3
+            </div>
+        </div>
+    </div>
+    <div id="counter">Punkty: 0</div>
+    <div id="info"></div>
+</body>
+</html>
