@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label id="password">
-        New password
-        <input type="password">
-    </label>
-    <label>
-        <input type="checkbox" onclick="toggleVisibility('password')">
-        Toggle password visibility
-    </label>
-    <label id="repeat">
-        Repeat new password
-        <input type="password">
-        <button onclick="toggleVisibility('repeat')"></button>
-    </label>
+    <form>
+        <label>
+            New password
+            <div>
+                <input type="password" id="password" required="true">
+                <button id="button-password">Toggle visibility</button>
+            </div>
+        </label>
+
+        <label>
+            Repeat new password
+            <div>
+                <input type="password" id="repeat" required="true">
+                <button id="button-repeat">Toggle visibility</button>
+            </div>
+        </label>
+    </form>
+
     <ul>
-        <li id="8-chars" class="fulfilled">at least 8 characters</li>
-        <li id="">at least one special character</li>
-        <li>at least one capital letter</li>
-        <li>at least one digit</li>
+        <li id="8-chars">at least 8 characters</li>
+        <li id="special-char">at least one special character</li>
+        <li id="capital-char">at least one capital letter</li>
+        <li id="digit">at least one digit</li>
     </ul>
 </body>
 </html>

@@ -9,6 +9,8 @@ const info = document.getElementById("info")
 
 let points = 0
 let propagation = true
+let switchCall = false
+let lastDiv = "blue"
 let displayedInfo = false
 
 function changePropagation() {
@@ -17,12 +19,14 @@ function changePropagation() {
 
 function reset() {
     [blue, red, yellow].forEach(element => {
-        element.removeEventListener("click", addPoints)
-        element.addEventListener("click", addPoints)
+        element.removeEventListener("click", addPoints, true)
+        element.removeEventListener("click", addPoints, false)
+        element.addEventListener("click", addPoints, false)
     })
 
     points = 0
     propagation = true
+    switchCall = false
     red.style.backgroundColor = "red"
     yellow.style.backgroundColor = "yellow"
 
@@ -30,15 +34,18 @@ function reset() {
     info.innerText = ""
 }
 
-function checkPoints() {
-    if (points > 30) {
-        red.removeEventListener("click", addPoints)
-        red.style.backgroundColor = "grey"
-        if (points > 50) {
-            yellow.removeEventListener("click", addPoints)
-            yellow.style.backgroundColor = "grey"
-        }
+function switchCallOrder() {
+    switchCall = !switchCall;
+    [blue, red, yellow].forEach(element => {
+        element.removeEventListener("click", addPoints, !switchCall)
+        element.addEventListener("click", addPoints, switchCall)
+    })
+    if (switchCall) {
+        lastDiv = "yellow"
+    } else {
+        lastDiv = "blue"
     }
+    checkPoints()
 }
 
 function addPoints(event) {
@@ -56,22 +63,40 @@ function addPoints(event) {
         default:
             break;
     }
+    
+    if (!propagation) {
+        event.stopPropagation()
+    }
+
 
     if (!displayedInfo) {
-        if (event.target === event.currentTarget || event.currentTarget.contains(event.target)) {
+        if (event.currentTarget.contains(event.target) || event.target === event.currentTarget) {
             displayedInfo = true
             displayInfo(event.currentTarget.id)
         }
     }
 
-    if (!propagation) {
-        event.stopPropagation()
-    }
-
-    if (event.currentTarget.id === "blue" || !propagation) {
+    if (event.currentTarget.id === lastDiv || !propagation || switchCall) {
         displayedInfo = false
-        checkPoints()
+        // checkPoints()
         displayPoints()
+
+        if (event.currentTarget.id === lastDiv || !propagation) {
+            checkPoints()
+        }
+    }
+}
+
+function checkPoints() {
+    if (points > 30) {
+        red.removeEventListener("click", addPoints,false)
+        red.removeEventListener("click", addPoints, true)
+        red.style.backgroundColor = "grey"
+        if (points > 50) {
+            yellow.removeEventListener("click", addPoints, false)
+            yellow.removeEventListener("click", addPoints, true)
+            yellow.style.backgroundColor = "grey"
+        }
     }
 }
 
@@ -97,7 +122,8 @@ function displayInfo(target) {
 }
 
 [blue, red, yellow].forEach(element => {
-    element.addEventListener("click", addPoints)
+    element.addEventListener("click", addPoints, false)
 })
 stopStartButton.addEventListener("click", changePropagation)
 resetButton.addEventListener("click", reset)
+switchButton.addEventListener("click", switchCallOrder)
