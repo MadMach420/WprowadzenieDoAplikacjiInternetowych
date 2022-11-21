@@ -13,7 +13,7 @@ nameInput.addEventListener("input", (event) => {
 })
 
 phoneInput.addEventListener("input", (event) => {
-    let regex = /^\+?([0-9]{3})?(\s*[0-9]\s*){9}$/
+    let regex = /^(\+?[0-9]{3})?(\s*[0-9]\s*){9}$/
     if (event.target.value.match(regex)) {
         phoneInput.setCustomValidity("")
     } else {
