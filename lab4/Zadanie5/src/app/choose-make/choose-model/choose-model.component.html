@@ -1,0 +1,5 @@
+<select *ngIf="showSelect" [(ngModel)]="selectedModel">
+    <option [value]="'default'" [disabled]="true" [selected]="true" [hidden]="true">Select car model</option>
+    <option *ngFor="let model of currentModels" [value]="model" >{{ model }}</option>
+</select>
+<app-display-model [make]="make" [model]="selectedModel"></app-display-model>
