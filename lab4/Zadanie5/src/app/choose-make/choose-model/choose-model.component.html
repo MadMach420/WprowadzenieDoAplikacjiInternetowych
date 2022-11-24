@@ -2,4 +2,4 @@
     <option [value]="''" [disabled]="true" [selected]="true" [hidden]="true">Select car model</option>
     <option *ngFor="let model of currentModels" [value]="model" >{{ model }}</option>
 </select>
-<app-display-model [make]="make" [model]="selectedModel"></app-display-model>
+<app-choose-color [make]="make" [model]="selectedModel"></app-choose-color>

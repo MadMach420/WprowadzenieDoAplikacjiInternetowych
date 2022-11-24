@@ -1,0 +1,9 @@
+<ul>
+    <li
+        *ngFor="let color of colors"
+        [style]="'background-color: ' + color"
+        [id] = color
+        (click)="selectColor($event)"
+    ></li>
+</ul>
+<app-display-model [make]="make" [model]="model" [color]="selectedColor"></app-display-model>

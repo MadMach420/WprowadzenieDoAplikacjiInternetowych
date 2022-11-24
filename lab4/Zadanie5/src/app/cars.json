@@ -2,181 +2,181 @@
     {
         "make": "Ford",
         "model": "Focus",
-        "color": "red",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Aston Martin",
         "model": "Vanquish",
-        "color": "black",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Nissan",
         "model": "Micra Cabrio",
-        "color": "white",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Subaru",
         "model": "Casa Blanca",
-        "color": "blue",
+        "color": ["blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Nissan",
         "model": "Cube",
-        "color": "silver",
+        "color": ["silver"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Lotus",
         "model": "Esprit Series I",
-        "color": "red",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Ferrari",
         "model": "Modena GT Spyder California",
-        "color": "red",
+        "color": ["red"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "RL",
         "model": "Octane",
-        "color": "orange",
+        "color": ["red", "black", "white", "blue", "orange"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "RL",
         "model": "Dominus",
-        "color": "red",
+        "color": ["red", "black", "white", "blue", "orange"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "RL",
         "model": "Scarab",
-        "color": "blue",
+        "color": ["red", "black", "white", "blue", "orange"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "RL",
         "model": "Octane ZSR",
-        "color": "purple",
+        "color": ["red", "black", "white", "blue", "orange", "purple"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "FSO",
         "model": "Polonez",
-        "color": "red",
+        "color": ["red", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Reliant",
         "model": "Robin",
-        "color": "red",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic II",
-        "color": "blue",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic VI",
-        "color": "white",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic III",
-        "color": "blue",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic IV",
-        "color": "green",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic V",
-        "color": "red",
+        "color": ["red", "black", "white", "blue", "green"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic VII",
-        "color": "black",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic VIII",
-        "color": "white",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic IX",
-        "color": "yellow",
+        "color": ["red", "black", "white", "blue", "yellow"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic X",
-        "color": "green",
+        "color": ["red", "black", "white", "blue", "green"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic X Type R",
-        "color": "red",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "Civic XI",
-        "color": "black",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "E",
-        "color": "red",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Honda",
         "model": "N-VAN G",
-        "color": "white",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Hudson",
         "model": "Hornet",
-        "color": "green",
+        "color": ["red", "black", "white", "blue"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Mercedes",
         "model": "Klasa M Papamobile",
-        "color": "white",
+        "color": ["white"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Marvel",
         "model": "Thanos Car",
-        "color": "purple",
+        "color": ["purple"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     },
     {
         "make": "Mazda",
         "model": "RX-7",
-        "color": "red",
+        "color": ["red"],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus felis."
     }
 ]

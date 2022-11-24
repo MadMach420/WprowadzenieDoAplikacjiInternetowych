@@ -1,6 +1,6 @@
 export interface Car {
     make: string;
     model: string;
-    color: string;
+    color: string[];
     description: string;
 }
