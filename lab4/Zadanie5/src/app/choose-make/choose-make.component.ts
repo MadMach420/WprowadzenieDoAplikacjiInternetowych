@@ -10,7 +10,7 @@ import { Car } from "../car";
 export class ChooseMakeComponent implements OnInit {
     cars: Car[] = [];
     carMakes = new Set<string>();
-    selectedMake: string = 'default';
+    selectedMake: string = '';
 
     constructor (private carsService: CarsService) {}
 

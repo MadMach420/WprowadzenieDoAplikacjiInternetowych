@@ -1,5 +1,5 @@
 <select [(ngModel)]="selectedMake">
-    <option [value]="'default'" [disabled]="true" [selected]="true" [hidden]="true">Select car make</option>
+    <option [value]="''" [disabled]="true" [selected]="true" [hidden]="true">Select car make</option>
     <option *ngFor="let make of carMakes" [value]="make">{{ make }}</option>
 </select>
 <app-choose-model [make]="selectedMake"></app-choose-model>

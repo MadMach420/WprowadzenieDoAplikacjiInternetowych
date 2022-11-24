@@ -12,7 +12,7 @@ export class ChooseModelComponent implements OnChanges, OnInit {
     cars: Car[] = [];
     currentModels: string[] = [];
     showSelect: boolean = false;
-    selectedModel: string = 'Focus';
+    selectedModel: string = '';
 
     constructor(private carsService: CarsService) {
     }
@@ -22,7 +22,7 @@ export class ChooseModelComponent implements OnChanges, OnInit {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        this.selectedModel = 'default';
+        this.selectedModel = '';
         this.getCurrentModels(changes['make'].currentValue);
     }
 
