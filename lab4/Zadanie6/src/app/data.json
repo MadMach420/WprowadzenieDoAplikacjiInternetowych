@@ -1,0 +1,17 @@
+[
+    {
+        "title": "The Basics",
+        "subtitle": "Core Angular basics you have to know",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec accumsan est a massa hendrerit, vel aliquam ligula ornare. Mauris nec."
+    },
+    {
+        "title": "Components",
+        "subtitle": "Components are a core concept for building Angular UIs and apps",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id auctor nulla, sed pulvinar ligula. Vestibulum ante ipsum primis in."
+    },
+    {
+        "title": "Events",
+        "subtitle": "Events are important in Angular",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisl vitae urna dictum blandit. Duis non pretium ex. Quisque."
+    }
+]
