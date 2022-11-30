@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Example 1",
+        "country": "Thailand",
+        "startDate": "2023-05-20",
+        "endDate": "2023-06-06",
+        "price": 10000,
+        "seats": 20,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque velit vitae tellus egestas, a dictum velit consequat. Aenean sem leo, rhoncus non tempor quis, laoreet ut dui. Sed auctor.",
+        "photoURl": "src/assets/images/thailand.jpg"
+    },
+    {
+        "name": "Example 2",
+        "country": "England",
+        "startDate": "2023-09-08",
+        "endDate": "2023-09-16",
+        "price": 4000,
+        "seats": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa condimentum feugiat volutpat. Duis augue lacus, elementum nec leo non, dictum aliquet lorem. Aenean at elit convallis, varius justo. ",
+        "photoURl": "src/assets/images/england.jpg"
+    },
+    {
+        "name": "Example 3",
+        "country": "USA",
+        "startDate": "2023-03-20",
+        "endDate": "2023-03-30",
+        "price": 12500,
+        "seats": 15,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit nulla augue, sit amet euismod mauris sollicitudin ut. Mauris varius augue ut est vestibulum ornare. Phasellus fermentum eu diam a.",
+        "photoURl": "src/assets/images/usa.jpg"
+    },
+    {
+        "name": "Example 4",
+        "country": "Japan",
+        "startDate": "2023-08-10",
+        "endDate": "2023-08-20",
+        "price": 15000,
+        "seats": 30,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae enim ornare justo tempus mollis. Phasellus lacus sapien, vehicula eu libero vitae, venenatis luctus nulla. Suspendisse auctor blandit mauris, et.",
+        "photoURl": "src/assets/images/japan.jpeg"
+    },
+    {
+        "name": "Example 5",
+        "country": "Italy",
+        "startDate": "2024-02-05",
+        "endDate": "2024-02-14",
+        "price": 3000,
+        "seats": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi sed dolor malesuada laoreet. Vivamus fermentum, est a faucibus commodo, risus mauris mattis mauris, et convallis nisl odio vitae.",
+        "photoURl": "src/assets/images/italy.jpg"
+    },
+    {
+        "name": "Example 6",
+        "country": "Peru",
+        "startDate": "2024-01-01",
+        "endDate": "2024-01-15",
+        "price": 20000,
+        "seats": 40,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut erat arcu. Vivamus massa lacus, fermentum vel efficitur et, feugiat at tellus. Suspendisse gravida ante et risus molestie vulputate. Cras.",
+        "photoURl": "src/assets/images/peru.jpg"
+    },
+    {
+        "name": "Example 7",
+        "country": "Poland",
+        "startDate": "2023-02-01",
+        "endDate": "2023-02-06",
+        "price": 1000,
+        "seats": 2,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit semper lacus, ut ultricies erat hendrerit nec. Sed et euismod magna. Duis sagittis est et leo tempor, sed auctor magna.",
+        "photoURl": "src/assets/images/poland.jpg"
+    },
+    {
+        "name": "Example 8",
+        "country": "Egypt",
+        "startDate": "2023-01-20",
+        "endDate": "2023-02-06",
+        "price": 9000,
+        "seats": 25,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget justo eget lorem condimentum mattis. Etiam non nunc non nisi placerat suscipit vitae vel ipsum. Sed commodo orci id diam.",
+        "photoURl": "src/assets/images/egypt.jpg"
+    },
+    {
+        "name": "Example 9",
+        "country": "Turkey",
+        "startDate": "2023-04-10",
+        "endDate": "2023-04-20",
+        "price": 8000,
+        "seats": 13,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sapien leo. Vivamus sodales diam eget tincidunt ullamcorper. Nam aliquam quis mauris non euismod. Praesent condimentum mauris ultricies ex aliquam.",
+        "photoURl": "src/assets/images/turkey.jpg"
+    },
+    {
+        "name": "Example 10",
+        "country": "Iceland",
+        "startDate": "2023-08-03",
+        "endDate": "2023-08-13",
+        "price": 16000,
+        "seats": 16,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nunc ac orci porttitor, et placerat velit convallis. Aenean odio ipsum, hendrerit quis tellus eu, tempor malesuada justo. Nunc ut. ",
+        "photoURl": "src/assets/images/iceland.jpg"
+    }
+]
