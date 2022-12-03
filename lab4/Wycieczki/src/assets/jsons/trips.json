@@ -7,7 +7,8 @@
         "price": 10000,
         "seats": 20,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque velit vitae tellus egestas, a dictum velit consequat. Aenean sem leo, rhoncus non tempor quis, laoreet ut dui. Sed auctor.",
-        "photoURl": "src/assets/images/thailand.jpg"
+        "photoURl": "assets/images/thailand.jpg",
+        "availableSeats": 20
     },
     {
         "name": "Example 2",
@@ -17,7 +18,8 @@
         "price": 4000,
         "seats": 10,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa condimentum feugiat volutpat. Duis augue lacus, elementum nec leo non, dictum aliquet lorem. Aenean at elit convallis, varius justo. ",
-        "photoURl": "src/assets/images/england.jpg"
+        "photoURl": "assets/images/england.jpg",
+        "availableSeats": 10
     },
     {
         "name": "Example 3",
@@ -27,7 +29,8 @@
         "price": 12500,
         "seats": 15,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit nulla augue, sit amet euismod mauris sollicitudin ut. Mauris varius augue ut est vestibulum ornare. Phasellus fermentum eu diam a.",
-        "photoURl": "src/assets/images/usa.jpg"
+        "photoURl": "assets/images/usa.jpg",
+        "availableSeats": 15
     },
     {
         "name": "Example 4",
@@ -37,7 +40,8 @@
         "price": 15000,
         "seats": 30,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae enim ornare justo tempus mollis. Phasellus lacus sapien, vehicula eu libero vitae, venenatis luctus nulla. Suspendisse auctor blandit mauris, et.",
-        "photoURl": "src/assets/images/japan.jpeg"
+        "photoURl": "assets/images/japan.jpeg",
+        "availableSeats": 30
     },
     {
         "name": "Example 5",
@@ -47,7 +51,8 @@
         "price": 3000,
         "seats": 5,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi sed dolor malesuada laoreet. Vivamus fermentum, est a faucibus commodo, risus mauris mattis mauris, et convallis nisl odio vitae.",
-        "photoURl": "src/assets/images/italy.jpg"
+        "photoURl": "assets/images/italy.jpg",
+        "availableSeats": 5
     },
     {
         "name": "Example 6",
@@ -57,7 +62,8 @@
         "price": 20000,
         "seats": 40,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut erat arcu. Vivamus massa lacus, fermentum vel efficitur et, feugiat at tellus. Suspendisse gravida ante et risus molestie vulputate. Cras.",
-        "photoURl": "src/assets/images/peru.jpg"
+        "photoURl": "assets/images/peru.jpg",
+        "availableSeats": 40
     },
     {
         "name": "Example 7",
@@ -67,7 +73,8 @@
         "price": 1000,
         "seats": 2,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit semper lacus, ut ultricies erat hendrerit nec. Sed et euismod magna. Duis sagittis est et leo tempor, sed auctor magna.",
-        "photoURl": "src/assets/images/poland.jpg"
+        "photoURl": "assets/images/poland.jpg",
+        "availableSeats": 2
     },
     {
         "name": "Example 8",
@@ -77,7 +84,8 @@
         "price": 9000,
         "seats": 25,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget justo eget lorem condimentum mattis. Etiam non nunc non nisi placerat suscipit vitae vel ipsum. Sed commodo orci id diam.",
-        "photoURl": "src/assets/images/egypt.jpg"
+        "photoURl": "assets/images/egypt.jpg",
+        "availableSeats": 25
     },
     {
         "name": "Example 9",
@@ -87,7 +95,8 @@
         "price": 8000,
         "seats": 13,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sapien leo. Vivamus sodales diam eget tincidunt ullamcorper. Nam aliquam quis mauris non euismod. Praesent condimentum mauris ultricies ex aliquam.",
-        "photoURl": "src/assets/images/turkey.jpg"
+        "photoURl": "assets/images/turkey.jpg",
+        "availableSeats": 13
     },
     {
         "name": "Example 10",
@@ -97,6 +106,7 @@
         "price": 16000,
         "seats": 16,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nunc ac orci porttitor, et placerat velit convallis. Aenean odio ipsum, hendrerit quis tellus eu, tempor malesuada justo. Nunc ut. ",
-        "photoURl": "src/assets/images/iceland.jpg"
+        "photoURl": "assets/images/iceland.jpeg",
+        "availableSeats": 16
     }
 ]

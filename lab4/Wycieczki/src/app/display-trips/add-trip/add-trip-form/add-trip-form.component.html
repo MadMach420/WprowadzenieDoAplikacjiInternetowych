@@ -1,0 +1,32 @@
+<div class="form-container">
+    <h2>New trip</h2>
+    <form [formGroup]="formGroup">
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" name="name" id="name">
+
+        <label for="country">Country</label>
+        <input formControlName="country" type="text" name="country" id="country">
+
+        <label for="sdate">Start/end date</label>
+        <input formControlName="sdate" type="date" name="sdate" id="sdate" placeholder="">
+        <input formControlName="edate" type="date" name="edate" id="edate" placeholder="">
+        <div *ngIf="datesNotSubsequent" class="error">Start date has to precede end date!</div>
+
+        <label for="price">Price</label>
+        <input formControlName="price" type="number" name="price" id="price">
+
+        <label for="seats">Seats</label>
+        <input formControlName="seats" type="number" name="seats" id="seats">
+
+        <label for="desc">Description</label>
+        <textarea formControlName="desc" name="desc" id="desc"></textarea>
+
+        <label for="photo">Photo URL</label>
+        <input formControlName="photo" type="text" name="photo" id="photo">
+        <div *ngIf="invalidPhotoUrl" class="error">Invalid URL!</div>
+
+        <button *ngIf="this.formGroup.valid" type="submit" (click)="submitTrip()" class="submit">Submit</button>
+        <button *ngIf="!this.formGroup.valid" disabled type="submit" (click)="submitTrip()" class="submit">Submit</button>
+    </form>
+    <button class="back" (click)="closeFormEvent.emit()">Back</button>
+</div>

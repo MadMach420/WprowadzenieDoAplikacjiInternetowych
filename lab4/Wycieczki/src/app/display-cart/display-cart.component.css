@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back {
+    font-size: large;
+    border: none;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-left: 2rem;
+}
+
+.back:hover {
+    background-color: #006700;
+}
+
+.main-cart {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.summary {
+    min-height: 10rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    gap: 2rem;
+}
+
+.total {
+    font-size: larger;
+}

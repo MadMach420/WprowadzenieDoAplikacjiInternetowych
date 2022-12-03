@@ -24,6 +24,9 @@
             "dom"
         ],
         "resolveJsonModule": true,
+        "types": [
+          "@angular/localize"
+        ],
         "esModuleInterop": true
     },
     "angularCompilerOptions": {

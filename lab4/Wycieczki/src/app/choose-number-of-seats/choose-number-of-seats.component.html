@@ -1,0 +1,15 @@
+<div *ngIf="trip !== null" class="container">
+    <div [ngStyle]="{'background-color': trip.availableSeats > 3 ? 'green' : 'red'}"
+        class="number"
+    >{{ numberOfChosenSeats }}</div>
+    <button
+        *ngIf="trip.availableSeats < trip.seats"
+        class="decrease"
+        (click)="decreaseNumberOfChosenSeats()"
+    >-</button>
+    <button
+        *ngIf="trip.availableSeats > 0"
+        class="increase"
+        (click)="increaseNumberOfChosenSeats()"
+    >+</button>
+</div>

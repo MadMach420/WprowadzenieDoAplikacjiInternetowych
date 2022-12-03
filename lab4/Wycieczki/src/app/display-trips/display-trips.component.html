@@ -1,0 +1,8 @@
+<app-top-bar></app-top-bar>
+<div class="card-container">
+    <app-trip-card
+        *ngFor="let trip of tripsDataService.trips"
+        [trip]="trip"
+        [color]="tripsDataService.getColor(trip)"
+    ></app-trip-card>
+</div>

@@ -1,0 +1,14 @@
+
+<div class="main-cart">
+    <app-cart-item *ngFor="let item of cartService.cartItems" [item]="item"></app-cart-item>
+    <div class="summary">
+        <h2>Summary</h2>
+        <div class="total">
+            Total:<br><b>{{ calculateTotalPrice() }}</b> PLN
+        </div>
+    </div>
+</div>
+<button
+    class="back"
+    (click)="switchDisplayService.onDisplay = 'trips'"
+>⏎ Back to trips</button>

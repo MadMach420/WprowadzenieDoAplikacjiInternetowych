@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.new-trip-button {
+    font-size: large;
+    border: none;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.new-trip-button:hover {
+    background-color: #006700;
+}
+
+.obscure-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
