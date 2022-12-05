@@ -11,7 +11,8 @@ import { AddTripFormComponent } from './display-trips/add-trip/add-trip-form/add
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DisplayCartComponent } from './display-cart/display-cart.component';
 import { CartItemComponent } from './display-cart/cart-item/cart-item.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { StarComponent } from './star-rating/star/star.component';
 
 @NgModule({
     declarations: [
@@ -25,12 +26,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         AddTripFormComponent,
         DisplayCartComponent,
         CartItemComponent,
+        StarRatingComponent,
+        StarComponent,
     ],
     imports: [
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
-        NgbModule
     ],
     providers: [],
     bootstrap: [AppComponent]

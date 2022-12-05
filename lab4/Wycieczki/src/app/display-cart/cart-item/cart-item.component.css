@@ -9,9 +9,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    /*background-color: rgb(173, 216, 230, 0.5);*/
     border-radius: 20px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 3px 3px 10px gray;
     gap: 2rem;
 }
 

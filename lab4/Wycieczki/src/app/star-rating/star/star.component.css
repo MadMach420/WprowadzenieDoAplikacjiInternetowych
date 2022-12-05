@@ -1,0 +1,7 @@
+.filled {
+    fill: gold;
+}
+
+.blank {
+    fill: rgba(255, 215, 0, 0.25);
+}

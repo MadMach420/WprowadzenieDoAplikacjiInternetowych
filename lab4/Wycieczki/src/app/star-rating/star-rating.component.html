@@ -1,0 +1,8 @@
+<app-star
+    *ngFor="let starId of stars"
+    [starId]="starId"
+    [currentRating]="hoverRating"
+    (click)="chooseRating(starId)"
+    (mouseenter)="mouseEnter(starId)"
+    (mouseleave)="mouseLeave()"
+></app-star>

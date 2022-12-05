@@ -7,6 +7,7 @@ export interface Trip {
     seats: number;
     description: string;
     photoURl: string;
-
     availableSeats: number;
+    starRating: number;
+    numberOfReviews: number;
 }

@@ -1,12 +1,18 @@
-<div class="container" *ngIf="trip !== null" [ngStyle]="{'box-shadow': '0 0 20px ' + color, 'border': '1px solid ' + color}">
+<div class="container" *ngIf="trip !== null" [ngStyle]="{'box-shadow': '3px 3px 10px ' + color}">
     <h2>{{ trip.name | uppercase }}</h2>
-    <div class="img-wrapper" [ngStyle]="{'box-shadow': '0 0 10px ' + color}">
+    <div class="img-wrapper" [ngStyle]="{'box-shadow': '0 0 8px ' + color}">
         <img [src]="trip.photoURl" alt="Picture">
     </div>
+
+    <p>Rating: <b>{{ trip.starRating }}</b> based on {{ trip.numberOfReviews }} review(s)</p>
+    <app-star-rating [rating]="trip.starRating" (ratingChosenEvent)="updateRating($event)"></app-star-rating>
+
     <h3>{{ trip.country | uppercase }}</h3>
     <p>{{ trip.description }}</p>
     <p><b>{{ trip.startDate }}</b> - <b>{{ trip.endDate }}</b></p>
     <p><b>{{ trip.price }}</b> PLN per person</p>
+    <p>Max: <b>{{ trip.seats }}</b></p>
+    <p>Available: <b>{{ trip.availableSeats }}</b></p>
 
     <app-choose-number-of-seats [trip]="trip"></app-choose-number-of-seats>
 </div>

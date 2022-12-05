@@ -3,12 +3,12 @@
         class="number"
     >{{ numberOfChosenSeats }}</div>
     <button
-        *ngIf="trip.availableSeats < trip.seats"
+        [ngStyle]="{'display': numberOfChosenSeats > 0 ? 'block' : 'none'}"
         class="decrease"
         (click)="decreaseNumberOfChosenSeats()"
     >-</button>
     <button
-        *ngIf="trip.availableSeats > 0"
+        [ngStyle]="{'display': trip.availableSeats > 0 ? 'block' : 'none'}"
         class="increase"
         (click)="increaseNumberOfChosenSeats()"
     >+</button>

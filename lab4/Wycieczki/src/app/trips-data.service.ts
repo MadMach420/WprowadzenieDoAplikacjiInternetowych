@@ -32,7 +32,7 @@ export class TripsDataService {
 
     getColor(trip: Trip): string {
         if (trip.availableSeats == 0) {
-            return 'black';
+            return 'gray';
         }
 
         let mostExpensive: boolean = true;
@@ -54,7 +54,7 @@ export class TripsDataService {
         } else if (leastExpensive) {
             return 'red';
         } else {
-            return 'black';
+            return 'gray';
         }
     }
 }

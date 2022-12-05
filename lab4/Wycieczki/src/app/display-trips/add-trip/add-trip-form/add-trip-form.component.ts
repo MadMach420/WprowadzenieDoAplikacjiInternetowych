@@ -38,7 +38,7 @@ export class AddTripFormComponent{
             new URL(this.formGroup.controls['photo'].value)
         } catch (_) {
             this.invalidPhotoUrl = true;
-            return;
+            // return;
         }
         this.invalidPhotoUrl = false;
 
@@ -51,7 +51,9 @@ export class AddTripFormComponent{
             seats: this.formGroup.controls['seats'].value,
             description: this.formGroup.controls['desc'].value,
             photoURl: this.formGroup.controls['photo'].value,
-            availableSeats: this.formGroup.controls['seats'].value
+            availableSeats: this.formGroup.controls['seats'].value,
+            starRating: 0,
+            numberOfReviews: 0
         };
 
         this.tripDataService.addTrip(newTrip);

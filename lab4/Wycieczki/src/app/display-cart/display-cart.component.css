@@ -32,7 +32,8 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 3px 3px 10px gray;
+    /*border: 1px solid gray;*/
     gap: 2rem;
 }
 

@@ -8,7 +8,9 @@
         "seats": 20,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque velit vitae tellus egestas, a dictum velit consequat. Aenean sem leo, rhoncus non tempor quis, laoreet ut dui. Sed auctor.",
         "photoURl": "assets/images/thailand.jpg",
-        "availableSeats": 20
+        "availableSeats": 20,
+        "starRating": 4.2,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 2",
@@ -19,7 +21,9 @@
         "seats": 10,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa condimentum feugiat volutpat. Duis augue lacus, elementum nec leo non, dictum aliquet lorem. Aenean at elit convallis, varius justo. ",
         "photoURl": "assets/images/england.jpg",
-        "availableSeats": 10
+        "availableSeats": 10,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 3",
@@ -30,7 +34,9 @@
         "seats": 15,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit nulla augue, sit amet euismod mauris sollicitudin ut. Mauris varius augue ut est vestibulum ornare. Phasellus fermentum eu diam a.",
         "photoURl": "assets/images/usa.jpg",
-        "availableSeats": 15
+        "availableSeats": 15,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 4",
@@ -41,7 +47,9 @@
         "seats": 30,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae enim ornare justo tempus mollis. Phasellus lacus sapien, vehicula eu libero vitae, venenatis luctus nulla. Suspendisse auctor blandit mauris, et.",
         "photoURl": "assets/images/japan.jpeg",
-        "availableSeats": 30
+        "availableSeats": 30,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 5",
@@ -52,7 +60,9 @@
         "seats": 5,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi sed dolor malesuada laoreet. Vivamus fermentum, est a faucibus commodo, risus mauris mattis mauris, et convallis nisl odio vitae.",
         "photoURl": "assets/images/italy.jpg",
-        "availableSeats": 5
+        "availableSeats": 5,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 6",
@@ -63,7 +73,9 @@
         "seats": 40,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut erat arcu. Vivamus massa lacus, fermentum vel efficitur et, feugiat at tellus. Suspendisse gravida ante et risus molestie vulputate. Cras.",
         "photoURl": "assets/images/peru.jpg",
-        "availableSeats": 40
+        "availableSeats": 40,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 7",
@@ -74,7 +86,9 @@
         "seats": 2,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit semper lacus, ut ultricies erat hendrerit nec. Sed et euismod magna. Duis sagittis est et leo tempor, sed auctor magna.",
         "photoURl": "assets/images/poland.jpg",
-        "availableSeats": 2
+        "availableSeats": 2,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 8",
@@ -85,7 +99,9 @@
         "seats": 25,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget justo eget lorem condimentum mattis. Etiam non nunc non nisi placerat suscipit vitae vel ipsum. Sed commodo orci id diam.",
         "photoURl": "assets/images/egypt.jpg",
-        "availableSeats": 25
+        "availableSeats": 17,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 9",
@@ -96,7 +112,9 @@
         "seats": 13,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sapien leo. Vivamus sodales diam eget tincidunt ullamcorper. Nam aliquam quis mauris non euismod. Praesent condimentum mauris ultricies ex aliquam.",
         "photoURl": "assets/images/turkey.jpg",
-        "availableSeats": 13
+        "availableSeats": 13,
+        "starRating": 4,
+        "numberOfReviews": 1
     },
     {
         "name": "Example 10",
@@ -107,6 +125,8 @@
         "seats": 16,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nunc ac orci porttitor, et placerat velit convallis. Aenean odio ipsum, hendrerit quis tellus eu, tempor malesuada justo. Nunc ut. ",
         "photoURl": "assets/images/iceland.jpeg",
-        "availableSeats": 16
+        "availableSeats": 16,
+        "starRating": 4,
+        "numberOfReviews": 1
     }
 ]
