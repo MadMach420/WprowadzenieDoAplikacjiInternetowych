@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {CartService} from "../../cart.service";
-import {SwitchDisplayService} from "../../switch-display.service";
 
 @Component({
     selector: 'app-top-bar',
@@ -8,6 +7,6 @@ import {SwitchDisplayService} from "../../switch-display.service";
     styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-    constructor(public cartService: CartService, public switchDisplayService: SwitchDisplayService) {
+    constructor(public cartService: CartService) {
     }
 }

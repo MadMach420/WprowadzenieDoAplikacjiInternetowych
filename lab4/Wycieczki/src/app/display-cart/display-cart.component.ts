@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {CartService} from "../cart.service";
-import {SwitchDisplayService} from "../switch-display.service";
 
 @Component({
   selector: 'app-display-cart',
@@ -9,7 +8,7 @@ import {SwitchDisplayService} from "../switch-display.service";
 })
 export class DisplayCartComponent {
 
-    constructor(public cartService: CartService, public switchDisplayService: SwitchDisplayService) {
+    constructor(public cartService: CartService) {
     }
 
     calculateTotalPrice(): number {

@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {SwitchDisplayService} from "./switch-display.service";
 
 @Component({
     selector: 'app-root',
@@ -8,7 +7,4 @@ import {SwitchDisplayService} from "./switch-display.service";
 })
 export class AppComponent {
     title = 'Wycieczki';
-
-    constructor(public switchDisplayService: SwitchDisplayService) {
-    }
 }

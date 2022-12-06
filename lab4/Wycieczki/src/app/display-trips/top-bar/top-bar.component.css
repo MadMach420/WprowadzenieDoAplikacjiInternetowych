@@ -36,7 +36,13 @@
     border-radius: 50%;
 }
 
+nav {
+    width: 3rem;
+    height: 3rem;
+}
+
 .cart {
+    display: block;
     width: 3rem;
     height: 3rem;
     border: none;

@@ -5,7 +5,11 @@
 }
 
 .back {
+    display: block;
+    width: fit-content;
+    height: fit-content;
     font-size: large;
+    text-decoration: none;
     border: none;
     padding: 1rem;
     background-color: green;

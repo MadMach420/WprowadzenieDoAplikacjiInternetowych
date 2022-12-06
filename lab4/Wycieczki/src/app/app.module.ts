@@ -13,6 +13,7 @@ import { DisplayCartComponent } from './display-cart/display-cart.component';
 import { CartItemComponent } from './display-cart/cart-item/cart-item.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { StarComponent } from './star-rating/star/star.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [
@@ -33,6 +34,7 @@ import { StarComponent } from './star-rating/star/star.component';
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
+        AppRoutingModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

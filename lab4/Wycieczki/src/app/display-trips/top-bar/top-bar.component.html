@@ -5,9 +5,8 @@
             class="trip-counter"
             [ngStyle]="{'background-color': cartService.totalNumberOfChosenTrips < 10 ? 'red' : 'green'}"
         >{{ cartService.totalNumberOfChosenTrips }}</div>
-        <button
-            class="cart"
-            (click)="switchDisplayService.onDisplay = 'cart'"
-        ></button>
+        <nav>
+            <a routerLink="/cart" class="cart"></a>
+        </nav>
     </div>
 </div>
