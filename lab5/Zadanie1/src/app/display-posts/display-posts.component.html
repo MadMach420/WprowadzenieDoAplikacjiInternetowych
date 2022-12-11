@@ -1,0 +1,6 @@
+<div>
+    <div>
+        <app-single-post *ngFor="let post of postsService.postsObservable | async" [post]="post"></app-single-post>
+    </div>
+    <app-new-post></app-new-post>
+</div>

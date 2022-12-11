@@ -1,0 +1,6 @@
+<form>
+    <h2>New post</h2>
+    <input type="text" placeholder="Title" [formControl]="title">
+    <textarea placeholder="Post body" [formControl]="body"></textarea>
+    <button (click)="submitPost($event)">Submit</button>
+</form>

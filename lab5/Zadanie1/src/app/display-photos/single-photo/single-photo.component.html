@@ -1,0 +1,4 @@
+<div *ngIf="photo !== undefined">
+    <h2>{{ photo.title | titlecase }}</h2>
+    <img [src]="photo.url" alt="photo">
+</div>

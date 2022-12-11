@@ -8,17 +8,17 @@ import { Observable } from 'rxjs';
 })
 export class PostsService {
     url: string = 'https://jsonplaceholder.typicode.com/posts';
-    req: Observable<Post> | undefined;
+    postsObservable: Observable<Post[]> | null = null;
 
     constructor(private http: HttpClient) {
         this.getPosts();
     }
 
     getPosts(): void {
-        this.req = this.http.get<Post>(this.url);
+        this.postsObservable = this.http.get<Post[]>(this.url);
     }
 
     addPost(post: Post): void {
-        this.http.put(this.url, post);
+        this.http.post<Post>(this.url, post).subscribe(newPost => console.log(newPost));
     }
 }

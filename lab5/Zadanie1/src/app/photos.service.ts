@@ -8,13 +8,13 @@ import {Photo} from "./Photo";
 })
 export class PhotosService {
     url: string = 'https://jsonplaceholder.typicode.com/photos';
-    req: Observable<Photo> | undefined;
+    photosObservable: Observable<Photo[]> | undefined;
 
     constructor(private http: HttpClient) {
         this.getPhotos();
     }
 
     getPhotos(): void {
-        this.req = this.http.get<Photo>(this.url);
+        this.photosObservable = this.http.get<Photo[]>(this.url);
     }
 }
