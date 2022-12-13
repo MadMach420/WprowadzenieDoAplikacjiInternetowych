@@ -1,60 +1,29 @@
 import {Injectable} from '@angular/core';
 import { Trip } from './Trip'
-import trips from 'src/assets/jsons/trips.json'
+import {Observable} from "rxjs";
+import {AngularFireDatabase, AngularFireList} from "@angular/fire/compat/database";
 
 @Injectable({
     providedIn: 'root'
 })
 export class TripsDataService {
-    trips: Trip[] = [];
-    // totalNumberOfChosenTrips: number = 0;
+    tripsRef: AngularFireList<Trip>;
+    trips: Observable<Trip[]>;
 
-    constructor() {
-        this.getTrips();
+    constructor(private db: AngularFireDatabase) {
+        this.tripsRef = this.db.list<Trip>('trips');
+        this.trips = this.getTrips();
     }
 
-    getTrips(): void {
-        this.trips = trips;
+    getTrips(): Observable<Trip[]> {
+        return this.tripsRef.valueChanges();
     }
 
     removeTrip(trip: Trip): void {
-        for (let i = 0; i < this.trips.length; i++) {
-            if (this.trips[i] === trip) {
-                this.trips.splice(i, 1);
-                break;
-            }
-        }
+        this.tripsRef.remove()
     }
 
     addTrip(trip: Trip): void {
-        this.trips.push(trip);
-    }
-
-    getColor(trip: Trip): string {
-        if (trip.availableSeats == 0) {
-            return 'gray';
-        }
-
-        let mostExpensive: boolean = true;
-        let leastExpensive: boolean = true;
-
-        this.trips.forEach(elem => {
-            if (elem.availableSeats > 0) {
-                if (elem.price > trip.price) {
-                    mostExpensive = false;
-                }
-                if (elem.price < trip.price) {
-                    leastExpensive = false;
-                }
-            }
-        })
-
-        if (mostExpensive) {
-            return 'green';
-        } else if (leastExpensive) {
-            return 'red';
-        } else {
-            return 'gray';
-        }
+        this.tripsRef.push(trip).then(res => console.log(res));
     }
 }

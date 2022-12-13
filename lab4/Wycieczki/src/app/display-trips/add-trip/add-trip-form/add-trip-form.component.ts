@@ -11,7 +11,6 @@ import {Trip} from "../../../Trip";
 export class AddTripFormComponent{
     @Output() closeFormEvent: EventEmitter<null> = new EventEmitter<null>();
     datesNotSubsequent: boolean = false;
-    invalidPhotoUrl: boolean = false;
 
     formGroup: FormGroup = new FormGroup({
         name: new FormControl('', Validators.required),
@@ -21,6 +20,7 @@ export class AddTripFormComponent{
         price: new FormControl('', [ Validators.required, Validators.min(1)]),
         seats: new FormControl('', [ Validators.required, Validators.min(0)]),
         desc: new FormControl('', Validators.required),
+        thumbnail: new FormControl('', Validators.required),
         photo: new FormControl('', Validators.required),
     });
 
@@ -34,14 +34,6 @@ export class AddTripFormComponent{
         }
         this.datesNotSubsequent = false;
 
-        try {
-            new URL(this.formGroup.controls['photo'].value)
-        } catch (_) {
-            this.invalidPhotoUrl = true;
-            // return;
-        }
-        this.invalidPhotoUrl = false;
-
         const newTrip: Trip = {
             name: this.formGroup.controls['name'].value,
             country: this.formGroup.controls['country'].value,
@@ -50,7 +42,8 @@ export class AddTripFormComponent{
             price: this.formGroup.controls['price'].value,
             seats: this.formGroup.controls['seats'].value,
             description: this.formGroup.controls['desc'].value,
-            photoURl: this.formGroup.controls['photo'].value,
+            thumbnailURL: this.formGroup.controls['thumbnail'].value,
+            photosURLs: this.formGroup.controls['photo'].value.split(","),
             availableSeats: this.formGroup.controls['seats'].value,
             starRating: 0,
             numberOfReviews: 0

@@ -27,7 +27,8 @@
         "types": [
           "@angular/localize"
         ],
-        "esModuleInterop": true
+        "esModuleInterop": true,
+
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,

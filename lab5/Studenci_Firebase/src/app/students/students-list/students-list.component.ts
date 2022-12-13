@@ -18,7 +18,7 @@ export class StudentsListComponent implements OnInit {
   }
 
   getStudentsList() {
- 
+
   }
 
   deleteStudents() {

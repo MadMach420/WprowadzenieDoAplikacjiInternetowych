@@ -1,7 +1,7 @@
 <div *ngIf="item !== null" class="container">
     <div class="left">
         <div class="photo">
-            <img [src]="item.trip.photoURl" alt="Photo">
+            <img [src]="item.trip.thumbnailURL" alt="Photo">
         </div>
         <div class="title">
             <h2>{{ item.trip.name | uppercase }}</h2>
