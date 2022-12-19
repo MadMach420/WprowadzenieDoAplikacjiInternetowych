@@ -1,0 +1,13 @@
+<div *ngIf="trip !== null" class="body">
+    <button class="add" (click)="displayAddReviewForm = true">Add review</button>
+    <div class="review-form-container" *ngIf="displayAddReviewForm === true">
+        <app-add-review [trip]="trip"></app-add-review>
+        <button class="back" (click)="displayAddReviewForm = false">Back</button>
+    </div>
+    <div class="reviews">
+        <app-single-review
+            *ngFor="let review of reviewService.getReviewsByTripName(trip.name)"
+            [review]="review"
+        ></app-single-review>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="body">
+    <div *ngIf="upcomingTrips.toString() === [].toString(); then thenDiv else elseDiv"></div>
+    <ng-template #thenDiv>
+        <h3 class="no-trips">No upcoming trips</h3>
+    </ng-template>
+    <ng-template #elseDiv>
+        <div class="container">
+            <h3>Upcoming trips</h3>
+            <div class="single-trip" *ngFor="let item of upcomingTrips">
+                <div><b>{{ item.item.trip.name | titlecase }}</b></div>
+                <div>This trip starts in <div class="days">{{ getDaysUntilTrip(item.item.trip) }}</div> days!</div>
+            </div>
+        </div>
+    </ng-template>
+</div>

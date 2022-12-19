@@ -1,0 +1,29 @@
+<div class="body">
+    <label for="nick">Nick</label>
+    <input [formControl]="nick" id="nick">
+    <div *ngIf="nick.errors?.['required'] && (nick.dirty || nick.touched)" class="alert">Nick is required</div>
+
+    <label for="name">Trip name</label>
+    <input [formControl]="name" id="name">
+    <div *ngIf="name.errors?.['required'] && (name.dirty || name.touched)" class="alert">Field is required</div>
+
+    <p>Rating</p>
+    <app-star-rating
+        (ratingChosenEvent)="ratingChosen($event)"
+        [rating]="rating"
+    ></app-star-rating>
+    <div *ngIf="showRatingError == true"  class="alert">Field is required</div>
+
+    <label for="review">Review</label>
+    <textarea [formControl]="text" id="review"></textarea>
+    <div *ngIf="text.invalid && (text.dirty || text.touched)" class="alert">
+        <div *ngIf="text.errors?.['required']">Field is required</div>
+        <div *ngIf="text.errors?.['minlength']">Text must be at least 50 characters long.</div>
+        <div *ngIf="text.errors?.['maxlength']">Text must be at most 500 characters long.</div>
+    </div>
+
+    <label for="date">Purchase date</label>
+    <input [formControl]="date" type="date" id="date">
+
+    <button (click)="submitReview()" class="submit">Submit</button>
+</div>

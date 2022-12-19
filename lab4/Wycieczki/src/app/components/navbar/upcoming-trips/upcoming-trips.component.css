@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: white;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 5px;
+    height: fit-content;
+    min-height: 3rem;
+    max-height: 20rem;
+    min-width: 10rem;
+    overflow-y: auto;
+    padding: 1rem;
+
+    z-index: 3;
+}
+
+.no-trips {
+    text-align: center;
+}
+
+.container {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-trip {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px gray;
+    font-size: larger;
+}
+
+.days {
+    font-weight: bold;
+    color: blue;
+}

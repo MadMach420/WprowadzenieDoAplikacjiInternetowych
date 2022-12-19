@@ -1,0 +1,18 @@
+<div class="container" *ngIf="trip !== null" [ngStyle]="{'box-shadow': '3px 3px 10px ' + color}">
+    <h2>{{ trip.name | uppercase }}</h2>
+    <div class="img-wrapper" [ngStyle]="{'box-shadow': '0 0 8px ' + color}">
+        <img [src]="trip.thumbnailURL" alt="Picture">
+    </div>
+
+    <p>Rating: <b>{{ trip.starRating }}</b> based on {{ trip.numberOfReviews }} review(s)</p>
+    <app-star-rating [rating]="trip.starRating" [disabled]="true"></app-star-rating>
+
+    <h3>{{ trip.country | uppercase }}</h3>
+    <p>Price: <b>{{ trip.price | currency }}</b></p>
+    <p>Max: <b>{{ trip.seats }}</b></p>
+    <p>Available: <b>{{ trip.availableSeats }}</b></p>
+
+    <app-choose-number-of-seats [trip]="trip"></app-choose-number-of-seats>
+</div>
+
+<button *ngIf="trip !== null" (click)="tripsDataService.removeTrip(trip)">Delete</button>

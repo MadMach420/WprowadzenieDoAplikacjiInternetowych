@@ -1,0 +1,5 @@
+<div *ngIf="photos.length > 0">
+    <button (click)="previousPhoto()" class="left"><</button>
+    <button (click)="nextPhoto()" class="right">></button>
+    <img [src]="source" alt="photo">
+</div>

@@ -1,0 +1,29 @@
+<div class="body" *ngIf="item !== null">
+    <div class="container">
+        <div class="left">
+            <div class="photo">
+                <img [src]="item.trip.thumbnailURL" alt="Photo">
+            </div>
+            <div class="title">
+                <h2>{{ item.trip.name | uppercase }}</h2>
+                <h3>{{ item.trip.country | uppercase}}</h3>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="unit-price">Per person:<br><b>{{ item.trip.price | currency }}</b></div>
+            <app-choose-number-of-seats [trip]="item.trip"></app-choose-number-of-seats>
+            <div class="total-price">
+                <div class="total">
+                    Total:<br><b>{{ item.trip.price * item.chosenNumberOfTrips }}</b> PLN
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button
+        (click)="cartService.purchaseSingle(item)"
+        class="buy"
+    >Purchase
+    </button>
+</div>

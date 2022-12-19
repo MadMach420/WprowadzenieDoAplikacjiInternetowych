@@ -1,0 +1,9 @@
+<div *ngIf="review !== null" class="body">
+    <h3>{{ review.nick }}</h3>
+    <app-star-rating
+        [rating]="review.rating"
+        [disabled]="true"
+    ></app-star-rating>
+    <div>{{ review.text }}</div>
+    <div *ngIf="review.date !== undefined">Purchased on {{ review.date }}</div>
+</div>

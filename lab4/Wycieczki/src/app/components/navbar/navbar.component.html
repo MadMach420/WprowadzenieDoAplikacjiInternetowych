@@ -1,0 +1,11 @@
+<nav>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/trips" routerLinkActive="active">Trips</a>
+    <a routerLink="/add-trip" routerLinkActive="active">Add trip</a>
+    <a routerLink="/cart" routerLinkActive="active">Cart ({{ cartService.totalNumberOfChosenTrips }} items)</a>
+    <a routerLink="/history" routerLinkActive="active">History</a>
+    <div>
+        <button (click)="toggleVisibility($event)">ⓘ</button>
+        <app-upcoming-trips *ngIf="upcomingVisible === true"></app-upcoming-trips>
+    </div>
+</nav>

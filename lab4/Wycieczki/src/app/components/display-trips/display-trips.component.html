@@ -1,0 +1,8 @@
+<div class="card-container">
+    <app-trip-card
+        *ngFor="let trip of trips"
+        [trip]="trip"
+        [color]="getColor(trip)"
+        [routerLink]="'/trips/' + trip.id"
+    ></app-trip-card>
+</div>

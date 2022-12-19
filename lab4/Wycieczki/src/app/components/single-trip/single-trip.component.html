@@ -1,0 +1,29 @@
+<button class="back" routerLink="/trips">Back to trips</button>
+<div *ngIf="trip !== null" class="body">
+    <h1>{{ trip.name | titlecase}}</h1>
+    <h2>{{ trip.country | titlecase }}</h2>
+    <app-photo-carousel [photos]="trip.photosURLs"></app-photo-carousel>
+
+    <app-star-rating
+        [rating]="trip.starRating"
+        [disabled]="true"
+    ></app-star-rating>
+    <p>Rating: <b>{{ trip.starRating }}</b> based on {{ trip.numberOfReviews }} review(s)</p>
+
+    <p>{{ trip.startDate }} - {{ trip.endDate }}</p>
+
+    <p>{{ trip.description }}</p>
+    <p>Price: <b>{{ trip.price | currency }}</b></p>
+
+    <p>Max: <b>{{ trip.seats }}</b></p>
+    <p>Available: <b>{{ trip.availableSeats }}</b></p>
+    <app-choose-number-of-seats [trip]="trip"></app-choose-number-of-seats>
+
+    <app-reviews [trip]="trip"></app-reviews>
+
+    <button class="edit" (click)="displayEditForm = true">Edit trip details</button>
+    <div class="edit-form-container" *ngIf="displayEditForm === true">
+        <app-update-trip [trip]="trip"></app-update-trip>
+        <button class="back" (click)="displayEditForm = false">Back</button>
+    </div>
+</div>

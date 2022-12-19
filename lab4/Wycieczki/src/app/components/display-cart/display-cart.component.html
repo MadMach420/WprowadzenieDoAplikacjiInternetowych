@@ -1,0 +1,15 @@
+<div class="main-cart">
+    <app-cart-item *ngFor="let item of cartService.cartItems" [item]="item"></app-cart-item>
+    <div class="bottom">
+        <div class="summary">
+            <h2>Summary</h2>
+            <div class="total">
+                Total:<br><b>{{ calculateTotalPrice() | currency }}</b>
+            </div>
+        </div>
+        <button
+            (click)="cartService.purchaseAll()"
+            class="buy-all"
+        >Purchase all</button>
+    </div>
+</div>

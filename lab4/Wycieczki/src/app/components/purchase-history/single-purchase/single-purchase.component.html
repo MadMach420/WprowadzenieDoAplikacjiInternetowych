@@ -1,0 +1,38 @@
+<div *ngIf="purchasedItem !== null" class="container">
+    <div class="left">
+        <div class="photo">
+            <img [src]="purchasedItem.item.trip.thumbnailURL" alt="Photo">
+        </div>
+        <div class="title">
+            <h2>{{ purchasedItem.item.trip.name | uppercase }}</h2>
+            <h3>{{ purchasedItem.item.trip.country | uppercase}}</h3>
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>Purchase date:</h3>
+        <p><b>{{ purchasedItem.purchaseDate }}</b></p>
+    </div>
+
+    <div class="info">
+        <h3>Price:</h3>
+        <p><b>{{ purchasedItem.item.trip.price | currency }}</b></p>
+    </div>
+
+    <div class="info">
+        <h3>Duration:</h3>
+        <p><b>{{ purchasedItem.item.trip.startDate }}</b> - <b>{{ purchasedItem.item.trip.endDate }}</b></p>
+    </div>
+
+    <div class="info">
+        <h3>Purchased tickets:</h3>
+        <p><b>{{ purchasedItem.item.chosenNumberOfTrips }}</b></p>
+    </div>
+
+    <div class="info">
+        <h3>Status:</h3>
+        <p *ngIf="status == 'upcoming'" class="upcoming"><b>{{ status | uppercase }}</b></p>
+        <p *ngIf="status == 'in progress'" class="in-progress"><b>{{ status | uppercase }}</b></p>
+        <p *ngIf="status == 'finished'" class="finished"><b>{{ status | uppercase }}</b></p>
+    </div>
+</div>
