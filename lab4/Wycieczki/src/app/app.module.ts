@@ -28,6 +28,9 @@ import { ReviewsComponent } from './components/single-trip/reviews/reviews.compo
 import { SingleReviewComponent } from './components/single-trip/reviews/single-review/single-review.component';
 import { AddReviewComponent } from './components/single-trip/reviews/add-review/add-review.component';
 import { UpdateTripComponent } from './components/single-trip/update-trip/update-trip.component';
+import {AngularFireAuthModule} from "@angular/fire/compat/auth";
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -55,6 +58,8 @@ import { UpdateTripComponent } from './components/single-trip/update-trip/update
         SingleReviewComponent,
         AddReviewComponent,
         UpdateTripComponent,
+        RegisterComponent,
+        LoginComponent,
     ],
     imports: [
         BrowserModule,
@@ -63,6 +68,7 @@ import { UpdateTripComponent } from './components/single-trip/update-trip/update
         AppRoutingModule,
         AngularFireDatabaseModule,
         AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {CartService} from "../../services/cart.service";
+import {AuthenticationService} from "../../services/authentication.service";
 
 @Component({
     selector: 'app-navbar',
@@ -10,7 +11,7 @@ import {CartService} from "../../services/cart.service";
 export class NavbarComponent {
     upcomingVisible: boolean = false;
 
-    constructor(public cartService: CartService) {
+    constructor(public cartService: CartService, public authService: AuthenticationService) {
     }
 
     toggleVisibility(event: Event): void {

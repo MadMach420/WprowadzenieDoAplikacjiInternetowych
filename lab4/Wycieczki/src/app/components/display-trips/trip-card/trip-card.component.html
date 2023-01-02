@@ -12,7 +12,7 @@
     <p>Max: <b>{{ trip.seats }}</b></p>
     <p>Available: <b>{{ trip.availableSeats }}</b></p>
 
-    <app-choose-number-of-seats [trip]="trip"></app-choose-number-of-seats>
+    <app-choose-number-of-seats *ngIf="authService.user != null" [trip]="trip"></app-choose-number-of-seats>
 </div>
 
-<button *ngIf="trip !== null" (click)="tripsDataService.removeTrip(trip)">Delete</button>
+<button *ngIf="trip !== null && (authService.user?.role == 'manager' || authService.user?.role == 'admin')" (click)="tripsDataService.removeTrip(trip)">Delete</button>

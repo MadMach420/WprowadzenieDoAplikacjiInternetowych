@@ -15,9 +15,11 @@ export class UpcomingTripsComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.upcomingTrips = this.purchaseHistoryService.purchasedItems.filter( elem =>
-            this.purchaseHistoryService.filterByStatus(elem.item, 'upcoming')
-        );
+        if (this.purchaseHistoryService.purchasedItems) {
+            this.upcomingTrips = this.purchaseHistoryService.purchasedItems.filter(elem =>
+                this.purchaseHistoryService.filterByStatus(elem.item, 'upcoming')
+            );
+        }
     }
 
     getDaysUntilTrip(trip: Trip): string {

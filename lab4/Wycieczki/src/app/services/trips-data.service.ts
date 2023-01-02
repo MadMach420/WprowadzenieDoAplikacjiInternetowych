@@ -53,7 +53,6 @@ export class TripsDataService {
     purchaseTripSeats(item: CartItem): void {
         this.tripsRef.update(item.trip.id, {availableSeats: item.trip.availableSeats - item.chosenNumberOfTrips})
             .then(res => console.log(res));
-        console.log('hehe');
 
         let date = new Date();
         let year = date.toLocaleString("default", { year: "numeric" });

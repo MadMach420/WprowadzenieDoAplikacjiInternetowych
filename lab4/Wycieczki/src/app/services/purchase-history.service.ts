@@ -1,15 +1,15 @@
 import {Injectable} from '@angular/core';
 import {CartItem} from "../interfaces/CartItem";
 import {PurchasedItem} from "../interfaces/PurchasedItem";
+import {Observable} from "rxjs";
+import {AngularFireDatabase} from "@angular/fire/compat/database";
+import {AuthenticationService} from "./authentication.service";
 
 @Injectable({
     providedIn: 'root'
 })
 export class PurchaseHistoryService {
     purchasedItems: PurchasedItem[] = [];
-
-    constructor() {
-    }
 
     addItem(item: PurchasedItem) {
         this.purchasedItems.push(item);

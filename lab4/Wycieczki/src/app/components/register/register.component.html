@@ -1,0 +1,17 @@
+<div>
+    <h2>Register</h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" [formControl]="email">
+    <label for="name">Username</label>
+    <input type="text" id="name" [formControl]="username">
+    <label for="passwd">Password</label>
+    <input type="password" id="passwd" [formControl]="password">
+    <select [formControl]="role">
+        <option selected disabled hidden value="">Select role</option>
+        <option value="user">User</option>
+        <option value="manager">Manager</option>
+        <option value="admin">Admin</option>
+    </select>
+    <button (click)="register()">Submit</button>
+    <p>Already have an account? <a routerLink="/login">Log in</a>.</p>
+</div>

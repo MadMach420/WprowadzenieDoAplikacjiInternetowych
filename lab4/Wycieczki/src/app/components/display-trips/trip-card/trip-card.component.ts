@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Trip} from "../../../interfaces/Trip";
 import {TripsDataService} from "../../../services/trips-data.service";
-import {FormControl} from "@angular/forms";
+import {AuthenticationService} from "../../../services/authentication.service";
 
 @Component({
     selector: 'app-trip-card',
@@ -13,7 +13,7 @@ export class TripCardComponent implements OnInit {
     @Input() color: string = 'black';
     stars: number = 3;
 
-    constructor(public tripsDataService: TripsDataService) {
+    constructor(public tripsDataService: TripsDataService, public authService:AuthenticationService) {
     }
 
     ngOnInit() {

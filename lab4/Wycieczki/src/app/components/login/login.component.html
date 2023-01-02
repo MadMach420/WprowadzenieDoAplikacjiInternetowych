@@ -1,0 +1,9 @@
+<div>
+    <h2>Log in</h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" [formControl]="email">
+    <label for="passwd">Password</label>
+    <input type="password" id="passwd" [formControl]="password">
+    <button (click)="login()">Log in</button>
+    <p>Don't have an account? <a routerLink="/register">Sign up</a>.</p>
+</div>

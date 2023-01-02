@@ -1,9 +1,16 @@
 <nav>
     <a routerLink="/home" routerLinkActive="active">Home</a>
     <a routerLink="/trips" routerLinkActive="active">Trips</a>
-    <a routerLink="/add-trip" routerLinkActive="active">Add trip</a>
-    <a routerLink="/cart" routerLinkActive="active">Cart ({{ cartService.totalNumberOfChosenTrips }} items)</a>
-    <a routerLink="/history" routerLinkActive="active">History</a>
+    <a *ngIf="authService.user?.role == 'manager' || authService.user?.role == 'admin'" routerLink="/add-trip" routerLinkActive="active">Add trip</a>
+    <a *ngIf="authService.user != null" routerLink="/cart" routerLinkActive="active">Cart ({{ cartService.totalNumberOfChosenTrips }} items)</a>
+    <a *ngIf="authService.user != null" routerLink="/history" routerLinkActive="active">History</a>
+    <a *ngIf="authService.user == null" routerLink="/register" routerLinkActive="active">Register</a>
+    <a *ngIf="authService.user == null" routerLink="/login" routerLinkActive="active">Log in</a>
+    <p *ngIf="authService.user != null">
+        {{ authService.user.displayName }}
+        <a (click)="authService.logout()" class="logout">Log out</a>
+    </p>
+
     <div>
         <button (click)="toggleVisibility($event)">ⓘ</button>
         <app-upcoming-trips *ngIf="upcomingVisible === true"></app-upcoming-trips>

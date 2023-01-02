@@ -1,5 +1,4 @@
 <div class="body">
-    <p>(Historia nie wyświetla się po odświeżeniu, będzie ona osobna dla każdego użytkownika, więc persystencję dodam przy autentykacji)</p>
     <div class="filter">
         <label for="select">Show trips with status:</label>
         <select [(ngModel)]="status" id="select">
@@ -9,7 +8,9 @@
             <option value="finished">Finished</option>
         </select>
     </div>
-    <div class="item" *ngFor="let item of (purchaseHistoryService.purchasedItems | filterByStatus: status)">
-        <app-single-purchase [purchasedItem]="item"></app-single-purchase>
+    <div *ngIf="purchaseHistoryService.purchasedItems != null">
+        <div class="item"  *ngFor="let item of (purchaseHistoryService.purchasedItems | filterByStatus: status)">
+            <app-single-purchase [purchasedItem]="item"></app-single-purchase>
+        </div>
     </div>
 </div>

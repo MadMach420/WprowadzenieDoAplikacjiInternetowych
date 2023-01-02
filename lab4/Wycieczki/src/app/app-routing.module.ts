@@ -6,6 +6,8 @@ import {SingleTripComponent} from "./components/single-trip/single-trip.componen
 import {HomeComponent} from "./components/home/home.component";
 import {AddTripComponent} from "./components/add-trip/add-trip.component";
 import {PurchaseHistoryComponent} from "./components/purchase-history/purchase-history.component";
+import {RegisterComponent} from "./components/register/register.component";
+import {LoginComponent} from "./components/login/login.component";
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
     {path: 'add-trip', component: AddTripComponent},
     {path: 'cart', component: DisplayCartComponent},
     {path: 'history', component: PurchaseHistoryComponent},
+    {path: 'register', component: RegisterComponent},
+    {path: 'login', component: LoginComponent},
     {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

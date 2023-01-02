@@ -3,6 +3,12 @@
         <img class="header-photo" src="assets/images/iceland.jpeg" alt="pog">
     </div>
     <div class="info">
+        <select *ngIf="authService.user?.role == 'manager' || authService.user?.role == 'admin'" [formControl]="persistence" (change)="changePersistence()">
+            <option value="" selected hidden disabled>Select persistence</option>
+            <option value="none">None</option>
+            <option value="session">Session</option>
+            <option value="local">Local</option>
+        </select>
         <h1>AGH Travel Agency</h1>
         <h2>Taniej niż warunek</h2>
         <p>✉ kmach@student.agh.edu.pl</p>
